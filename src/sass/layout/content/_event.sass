@@ -1,0 +1,174 @@
+.event-content
+	background: #f4f7fc
+	font-family: 'Arimo'
+	font-weight: normal
+	+pie-clearfix
+	padding-bottom: 55px
+	.swiper-container
+		padding: 0 30px 0px
+	.swiper-slide
+		text-align: center
+		background: #edf2f9
+		padding: 35px 0px 20px
+		cursor: pointer
+		.event-day-number
+			font-weight: bold
+			color: #6c85b0
+			font-size: 48px
+			line-height: 50px
+			text-transform: uppercase
+			display: block
+		.event-day-text
+			font-weight: bold
+			color: #6c85b0
+			font-size: 16px
+			line-height: 16px
+			padding-top: 15px
+			display: block
+	.swiper-slide-active
+		.event-day-number
+			color: #36445c
+		.event-day-text
+			color: #445167
+		
+	.swiper-button-prev,
+	.swiper-button-next
+		width: 22px
+		height: 100%
+		top: 0
+		text-align: center
+		display: inline-block
+		vertical-align: middle
+		// height: 25px
+		background: #f4f7fc
+		margin-top: 0px
+		// &:after
+		// 	content: ""
+		// 	display: inline-block
+		// 	vertical-align: middle
+		// 	width: 0
+		// 	height: 100%
+		&:before
+			font-size: 24px
+			color: #8b9098
+			+transition(0.3s)
+			display: inline-block
+			vertical-align: middle
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -12.5px
+			&:hover
+				color: #767a80
+	.swiper-button-prev
+		left: 0
+		&:before
+			+font-icon("left")
+	.swiper-button-next
+		right: 0
+		&:before
+			+font-icon("right")  
+
+
+.swiper-slider-content
+	+pie-clearfix
+	margin: 30px 0
+	margin-left: -10px
+.swiper-slider-content-item
+	width: 385px
+	height: 295px
+	overflow: hidden
+	margin-left: 10px
+	position: relative
+	text-align: center
+	font-size: 0
+	float: left
+	+border-radius(3px)
+	&:before
+		display: inline-block
+		vertical-align: middle
+		content: ""
+		width: 0
+		height: 100%
+	&:after
+		content: ""
+		background: rgba(#1d2d3d, 0.8)
+		height: 100%
+		width: 100%
+		display: block
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 1
+		+transition(0.2s)
+	&:hover
+		&:after
+			background: rgba(#1a4678, 0.9)
+	.swiper-slider-content-item-img
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.swiper-slider-content-item-text
+		position: relative
+		z-index: 2
+		color: #fff
+		display: inline-block
+		vertical-align: middle
+		width: 380px
+		padding: 0 25px
+		+box-sizing(border-box)
+		h5
+			font-size: 22px
+			line-height: 24px
+			position: relative
+			display: inline-block
+			padding-bottom: 24px
+			margin-bottom: 25px
+			&:after
+				content: ""
+				width: 100%
+				height: 1px
+				background: rgba(#fff, 0.333)
+				display: block
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+		h6
+			font-size: 18px
+			line-height: 22px
+			display: block
+			padding-bottom: 40px
+		a
+			font-size: 16px
+			border: 1px solid #fff
+			padding: 12px 35px 10px
+			+border-radius(3px)
+			display: inline-block
+			color: #fff
+			&:hover
+				color: #1a4d7e
+				background: #fff
+
+.event-content 
+	.slide-event
+		background: #db2922
+		.event-day-number
+			color: #fff
+		.event-day-text
+			color: #fff
+
+
+
+
+
+
+

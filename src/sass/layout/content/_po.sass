@@ -1,0 +1,876 @@
+.po-banner
+	font-family: 'Arimo'
+	&>.wrapper
+		text-align: left
+	.about-us-text
+		h5
+			font-size: 16px
+			line-height: 22px
+			display: block
+			color: #fff
+			padding-top: 8px
+			letter-spacing: 0.4px
+
+.po-banner-text
+	position: absolute
+	bottom: 0
+	z-index: 10
+	left: 0
+	right: 0
+	background: rgba(#1e699e, 0.65)
+	ul 
+		text-align: justify
+		display: block
+		font-size: 0
+		line-height: 0
+		padding: 16px 0 12px
+		&:after
+			content: ""
+			text-align: justify
+			width: 100%
+			height: 0
+			display: inline-block
+
+	li 
+		display: inline-block
+		box-sizing: border-box
+		&.active
+			a 
+				color: #ffc10f
+				text-decoration: underline
+		a 
+			color: #fff 
+			font-size: 15px
+			display: inline-block
+			line-height: 22px
+			span
+				color: #fff 
+				margin-left: 10px
+				font-size: 12px
+				line-height: 12px
+				display: inline-block
+				position: relative
+				padding: 4px
+				background: #d42822
+				border-radius: 50%
+				box-sizing: border-box
+				text-align: center
+				// &:after
+				// 	content: ""
+				// 	z-index: -1
+				// 	display: block
+				// 	width: 100%
+				// 	height: 100%
+				// 	position: absolute
+				// 	top: 0
+				// 	bottom: 0
+				// 	left: 0
+				// 	right: 0
+
+.po-menu-content
+	font-family: 'Arimo'
+	&>div
+		display: none
+		&.active
+			display: block
+	.po-menu-content-top
+		padding-top: 40px
+		padding-bottom: 20px
+		+pie-clearfix
+		h4
+			font-size: 22px
+			line-height: 24px
+			color: #0f283c 
+			float: left
+			padding-top: 9px
+		a 
+			padding: 16px 25px 12px 15px
+			color: #ffffff
+			float: right
+			font-size: 13px
+			text-transform: uppercase
+			line-height: 15px
+			background: #2680c0
+			&:hover
+				background: #196398
+			img 
+				margin-right: 15px
+		.search
+			position: relative
+			float: right
+			width: 430px
+			margin: 10.5px 0px
+			margin-left: 42px
+		input[type="search"]
+			color: #4c5c67
+			border: none 
+			+box-shadow(0px 2px 9px -2px rgba(230,236,242,1))
+			font-size: 15px
+			line-height: 16px
+			padding: 15px 20px 12px
+			box-sizing: border-box
+			outline: none
+			display: block
+			background: rgba(#f8fafc, 0.5)
+			width: 100%
+			margin-bottom: 10px
+			+transition(0.2s)
+			border-radius: 3px
+			+placeholder
+				color: #8f939c
+				+transition(0.7s)
+				+opacity(0.7)
+			&:focus
+				+box-shadow(0px 0px 9px -2px rgba(0,0,0,0.15))
+				+placeholder
+					+opacity(0)
+		.search-submit
+			position: absolute
+			right: 0
+			top: 0
+			height: 43px
+			width: 30px
+			&:before
+				+font-icon("search-new")
+				position: absolute
+				color: #90a5ba
+				right: 0
+				top: 13px
+				font-size: 16px
+				left: 0
+				bottom: 0
+				z-index: 1
+				pointer-events: none
+			input[type="submit"]
+				position: relative
+				border: none
+				outline: none
+				background: transparent
+				height: 100%
+				width: 30px
+				cursor: pointer
+	.po-menu-content-bottom
+		background: #f8fafc
+		padding-top: 30px
+		padding-bottom: 60px
+		text-align: center
+		+pie-clearfix
+	.more
+		color: #8498ac
+		font-size: 16px
+		line-height: 22px
+		text-transform: uppercase
+		display: inline-block
+		margin: auto
+		text-align: center
+		margin-top: 50px
+		&:hover
+			+opacity(0.7)
+		img
+			display: block
+			margin-top: 10px
+	.po-menu-content-bottom-item
+		padding: 25px 30px 20px
+		box-sizing: border-box
+		+pie-clearfix
+		background: #fff
+		+box-shadow(0px 2px 5px 0px rgba(230,236,242,1))
+		margin-bottom: 10px
+		border-radius: 3px
+		text-align: left
+		&:first-child
+			margin-bottom: 30px
+			p
+				color: #1a5178
+				text-transform: uppercase
+				font-size: 13px
+				line-height: 16px
+				font-weight: bold			
+		.title
+			width: 770px
+			float: left
+			font-size: 15px
+			line-height: 16px
+			color: #0f283c
+		.date
+			width: 240px
+			float: left
+			font-size: 14px
+			line-height: 16px
+			color: #0f283c
+		.download
+			width: 100px
+			// padding-left: 25px
+			font-size: 15px
+			color: #d42822
+			line-height: 15px
+			box-sizing: border-box
+			float: right
+			img 
+				margin-right: 8px
+			// background: image-url("download.png") no-repeat left center
+	.archive
+		.title
+			width: 620px
+		.type
+			float: left
+			text-decoration: underline
+			width: 150px
+			color: #1e699e
+			font-size: 13px
+			line-height: 16px
+		.po-menu-content-bottom
+			padding-top: 50px
+	.filter
+		margin-bottom: 30px
+		+pie-clearfix
+		h6
+			color: #203446
+			font-size: 16px
+			line-height: 16px
+			float: left
+			margin-right: 20px
+	.filter-category
+		float: left
+		width: 750px
+		.filter-category-content
+			float: left
+			+pie-clearfix
+			margin-top: -12px
+		a 
+			float: left
+			padding: 12px 20px 9px
+			text-transform: uppercase
+			font-size: 13px
+			color: #818c96
+			border-radius: 3px
+			margin-right: 20px
+			&.active
+				background: #1e699e
+				color: #fff
+	.filter-date
+		float: right
+		width: 430px
+		span 
+			float: left
+			white-space: pre
+		input
+			color: #4c5c67
+			border: none 
+			+box-shadow(0px 2px 9px -2px rgba(230,236,242,1))
+			font-size: 15px
+			line-height: 16px
+			padding: 12px 10px 9px
+			box-sizing: border-box
+			outline: none
+			display: block
+			background: rgba(#f8fafc, 0.5)
+			width: 90px
+			float: left
+			margin-bottom: 10px
+			margin-top: -12px
+			+transition(0.2s)
+			border-radius: 3px
+			span
+				float: left
+				white-space: pre
+			+placeholder
+				color: #8f939c
+				+transition(0.7s)
+				+opacity(0.7)
+			&:focus
+				+box-shadow(0px 0px 9px -2px rgba(0,0,0,0.15))
+				+placeholder
+					+opacity(0)
+	.anons
+		.po-menu-content-top
+			padding-bottom: 0
+			h4 
+				padding-top: 20px
+	.anons-content
+		margin-left: -20px
+		+pie-clearfix
+	.anons-content-item
+		float: left
+		margin-left: 20px
+		width: 380px
+		margin-bottom: 20px
+	.anons-content-item-img
+		display: block
+		height: 180px
+		position: relative
+		border-radius: 4px
+		img 
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover
+		a 
+			position: absolute
+			color: #ffffff
+			font-size: 15px
+			line-height: 15px
+			background: #d42822
+			padding: 6px 20px 5px
+			border-radius: 4px
+			left: 30px
+			bottom: 10px
+			&:hover
+				background: #a51510
+	.anons-content-item-text
+		min-height: 120px
+		position: relative
+		padding-bottom: 40px
+		padding-left: 30px
+		box-sizing: border-box
+		text-align: left
+		background: #fff
+		+box-shadow(0px 2px 5px 0px rgba(230,236,242,1))
+		border-radius: 0px 0px 4px 4px
+		a
+			color: #1e699e
+			font-size: 16px
+			display: block
+			padding-top: 25px
+	.anons-content-item-text-date
+		position: absolute
+		bottom: 15px
+		left: 30px
+		font-size: 14px
+		display: block
+		color: #0f283c
+
+	.document-protocol
+		.filter-category
+			.filter-category-content
+				margin-top: 0
+		.search
+			position: relative
+			float: right
+			width: 430px
+		input[type="search"]
+			color: #4c5c67
+			border: none 
+			+box-shadow(0px 2px 9px -2px rgba(230,236,242,1))
+			font-size: 15px
+			line-height: 16px
+			padding: 11px 20px 8px
+			box-sizing: border-box
+			outline: none
+			display: block
+			background: rgba(#f8fafc, 0.5)
+			width: 100%
+			margin-bottom: 10px
+			+transition(0.2s)
+			border-radius: 3px
+			+placeholder
+				color: #8f939c
+				+transition(0.7s)
+				+opacity(0.7)
+			&:focus
+				+box-shadow(0px 0px 9px -2px rgba(0,0,0,0.15))
+				+placeholder
+					+opacity(0)
+		.search-submit
+			position: absolute
+			right: 0
+			top: 0
+			height: 35px
+			width: 30px
+			&:before
+				+font-icon("search-new")
+				position: absolute
+				color: #90a5ba
+				right: 0
+				top: 9px
+				font-size: 16px
+				left: 0
+				bottom: 0
+				z-index: 1
+				pointer-events: none
+			input[type="submit"]
+				position: relative
+				border: none
+				outline: none
+				background: transparent
+				height: 100%
+				width: 30px
+				cursor: pointer
+	.po-menu-content-bottom-l
+		background: #1e699e
+		float: left
+		width: 280px
+		text-align: left
+	.po-menu-content-bottom-l-item
+		border-bottom: 1px dashed rgba(#fff, 0.2)
+		padding: 13px 20px 0px 30px
+		box-sizing: border-box
+		+pie-clearfix
+		h5
+			color: #d9e5ee
+			font-size: 15px
+			padding: 17px 0
+		p 
+			color: #ffffff
+			font-size: 15px
+			padding-bottom: 13px
+		.edit
+			font-size: 14px
+			line-height: 16px
+			color: #fff
+			border-radius: 3px
+			background: #d42822
+			padding: 10px 10px 9px
+			display: block
+			float: left
+			height: 35px
+			width: 130px
+			box-sizing: border-box
+			text-align: center
+			&:hover
+				background: #ee423c
+		.exit
+			box-sizing: border-box
+			font-size: 14px
+			text-align: center
+			line-height: 16px
+			color: #fff
+			border-radius: 3px
+			padding: 10px 10px 9px
+			display: block
+			float: right
+			width: 90px
+			background: #30719f
+			&:hover
+				background: #198cdd
+			&:after
+				+font-icon("exit")
+				font-size: 16px
+				vertical-align: middle
+				margin-left: 10px
+				color: #fff
+				display: inline-block
+	.coloro
+		background: #196194
+		padding: 35px 20px 30px 30px
+		border: none
+		margin-top: 17px
+	.po-menu-content-bottom-r
+		float: right
+		width: 860px
+		font-size: 0
+		line-height: 0
+		// margin-left: -20px
+		text-align: left
+	.po-menu-content-bottom-r-item
+		width: 199.7px 
+		display: inline-block
+		margin-left: 20px
+		padding: 20px 20px
+		box-sizing: border-box
+		vertical-align: top
+		text-align: center
+		+box-shadow(0px 2px 5px 0px rgba(230,236,242,1))
+		background: #fff
+		margin-bottom: 20px
+		&:hover
+			p 
+				color: #1481ce
+			.po-menu-content-bottom-r-img
+				+opacity(0.7)
+		&:nth-child(4n+1)
+			margin-left: 0
+		// &:first-child
+		// 	padding: 20px 20px
+		&:after
+			content: ''
+			display: inline-block
+			height: 100%
+			vertical-align: middle
+			width: 0
+		p 
+			display: table 
+			height: 45px
+			color: #1e699e
+			font-size: 15px
+			line-height: 22px
+			+transition(0.2s)
+			span 
+				display: table-cell
+				vertical-align: middle
+		.po-menu-content-bottom-r-img
+			display: block
+			height: 65px
+			+transition(0.2s)
+			img 
+				display: block
+				// height: 100%
+				// width: 100%
+				// object-fit: cover
+	.message
+		.po-menu-content-bottom-l
+			min-height: 410px
+			padding-top: 16px
+			box-sizing: border-box
+			a 
+				color: #fff
+				font-size: 16px
+				display: block
+		.po-menu-content-bottom-l-item
+			padding: 0
+			&:first-child
+				border-top: 1px dashed rgba(#fff, 0.2)
+			&:hover
+				background: #196194
+			&:last-child
+				// background: transparent
+				// padding: 0
+				// margin-top: 0
+				// border-bottom: 1px dashed rgba(#fff, 0.2)
+			a
+				display: block
+				padding: 16px 20px 13px 30px
+				img 
+					margin-right: 20px
+		.po-menu-content-bottom-r
+			min-height: 500px
+			height: 500px
+			margin-top: -20px
+			.name
+				font-size: 15px
+				line-height: 16px
+				color: #1e699e
+				display: inline-block
+				margin-right: 40px
+			.date
+				margin-right: 50px
+				line-height: 16px
+				font-size: 14px
+				display: inline-block
+			.send
+				margin-right: 30px
+				line-height: 16px
+				color: #d12924
+				font-size: 14px
+				display: inline-block
+				&:hover
+					color: #ff3c36
+			.full-message
+				display: block
+				width: 100%
+				margin-top: 60px
+			.full-message-text
+				padding: 30px
+				margin-top: 30px
+				box-sizing: border-box
+				font-size: 15px
+				line-height: 18px
+				display: block
+				color: #4a5864
+				+box-shadow(0px 2px 5px 0px rgba(230,236,242,1))
+				background: #fff
+				h5
+					font-size: 18px
+					line-height: 20px
+					color: #203446
+				p
+					padding-left: 20px
+					padding-top: 30px
+
+	table 
+		width: 100%
+		border-collapse: inherit
+		border-spacing: 0px 20px
+		select
+			color: #6e869f
+			border: none
+			height: 47px
+			font-size: 15px
+			line-height: 15px
+			padding-top: 3px
+			+box-shadow(0px 2px 5px 0px rgba(230,236,242,1))
+			background: #fff
+			outline: none
+			padding: 0px 20px
+			box-sizing: border-box
+			border-radius: 3px
+			background: image-url("select-arrow.png") no-repeat -10 0
+		label
+			font-size: 14px
+			color: #65696f 
+			cursor: pointer
+			position: relative
+			display: inline-block
+			vertical-align: top
+		label > .checkbox
+			width: 21px
+			height: 21px
+			background: url(../img/checkbox.png) no-repeat
+			display: inline-block
+			vertical-align: middle
+		label > input
+			position: absolute
+			opacity: 0
+		label > span
+			display: inline-block
+			vertical-align: middle
+		label input:checked + .checkbox
+			background-position: -24px 0
+		label input:checked ~ span
+			color: #da2828 
+		th 
+			box-sizing: border-box
+		tr 
+			+box-shadow(0px 2px 5px 0px rgba(230,236,242,1))
+			background: #fff
+			height: 66px
+		.po-table-1
+			width: 370px
+		.po-table-2
+			width: 190px
+		.po-table-3
+			width: 160px
+		.po-table-4
+			width: 80px
+	thead
+		tr
+			// border-bottom: 30px solid #f8fafc]
+			border-spacing: 10px 10px 10px 10px
+		th
+			text-transform: uppercase
+			font-weight: bold
+			color: #1a5178
+			font-size: 13px
+			line-height: 16px
+			&:last-child
+				text-align: center
+			&:first-child
+				padding: 0 40px
+	tbody
+		color: #1e699e
+		font-size: 15px
+		line-height: 16px
+		tr 
+			&:last-child
+				background: transparent
+			input[type="submit"]
+				width: 180px
+				float: right
+				background: #d42822
+				font-size: 16px
+				line-height: 20px
+				border: none
+				padding: 15px 0px 12px
+				color: #fff
+				margin-bottom: 0
+				box-sizing: border-box
+				outline: none
+				display: block
+				border-radius: 3px
+				+transition(0.2s)
+				cursor: pointer 
+				&:hover
+					background: #bc1c16
+		td
+			&:last-child
+				text-align: center
+			&:first-child
+				padding: 0 40px
+		.date
+			font-size: 14px
+			color: #0f283c
+	.creat-message-container
+		margin-top: 50px
+		input[type="text"]
+			float: left
+			color: #6e869f
+			background: #fff
+			font-size: 15px
+			line-height: 17px
+			border: none
+			padding: 15px 20px 12px
+			margin-bottom: 0
+			box-sizing: border-box
+			outline: none
+			display: block
+			border-radius: 3px
+			width: 420px
+			+box-shadow(0px 2px 5px 0px rgba(230,236,242,1))
+			+transition(0.3s)
+			+placeholder 
+				color: #6e869f
+				font-size: 15px
+				line-height: 17px
+				+opacity(0.7)
+				+transition(0.3s)
+			&:focus
+				+placeholder 
+					+opacity(0)
+			&:nth-child(2)
+				float: right
+		textarea
+			display: block
+			color: #6e869f
+			background: #fff
+			font-size: 15px
+			line-height: 17px
+			border: none
+			padding: 15px 20px 12px
+			margin-bottom: 0
+			box-sizing: border-box
+			+box-shadow(0px 2px 5px 0px rgba(230,236,242,1))
+			outline: none
+			display: inline-block
+			border-radius: 3px
+			width: 100%
+			margin-bottom: 30px
+			resize: none
+			font-family: 'Arimo'
+			clear: both
+			margin-top: 15px
+			+transition(0.3s)
+			+placeholder 
+				font-family: 'Arimo'
+				color: #6e869f
+				font-size: 15px
+				line-height: 17px
+				+opacity(0.7)
+				+transition(0.3s)
+			&:focus
+				+placeholder
+					+opacity(0)
+		label
+			font-size: 15px
+			color: #0f283c
+			line-height: 15px
+			cursor: pointer
+			margin-top: 11px
+			position: relative
+			display: inline-block
+			vertical-align: top
+		label > .checkbox
+			width: 21px
+			height: 21px
+			background: url(../img/checkbox.png) no-repeat
+			display: inline-block
+			vertical-align: middle
+		label > input
+			position: absolute
+			opacity: 0
+		label > span
+			display: inline-block
+			margin-left: 20px
+			vertical-align: middle
+			margin-top: 7px
+		label input:checked + .checkbox
+			background-position: -24px 0
+		label input:checked ~ span
+			color: #da2828 
+		.preview
+			width: 180px
+			float: right
+			background: transparent
+			font-size: 16px
+			line-height: 20px
+			border: 1px solid #1e699e
+			padding: 15px 0px 12px
+			color: #1e699e
+			margin-bottom: 0
+			box-sizing: border-box
+			outline: none
+			display: block
+			border-radius: 3px
+			+transition(0.2s)
+			cursor: pointer 
+			&:hover
+				border: 1px solid #2a99e7
+				color: #2a99e7
+		.send-submit
+			width: 180px
+			float: right
+			background: #d42822
+			font-size: 16px
+			line-height: 20px
+			border: none
+			padding: 15px 0px 12px
+			color: #fff
+			margin-bottom: 0
+			box-sizing: border-box
+			outline: none
+			display: block
+			border-radius: 3px
+			+transition(0.2s)
+			cursor: pointer 
+			margin-left: 20px
+			&:hover
+				background: #bc1c16
+
+
+
+
+
+
+
+.message-popup
+	background: rgba(#2b3842, 0.2)
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	z-index: 100
+	text-align: center
+	&:before
+		content: ""
+		display: inline-block
+		vertical-align: middle
+		height: 100%
+		width: 0
+	.message-popup-container
+		background: #fff
+		border-radius: 3px
+		width: 420px
+		padding: 30px 0px 20px
+		box-sizing: border-box
+		display: inline-block
+		vertical-align: middle
+		text-align: left
+		position: relative
+		h4
+			font-size: 17px
+			line-height: 18px
+			color: #2b3841
+			margin-bottom: 25px
+			display: block
+			font-weight: bold
+			padding: 0 30px
+		p
+			font-size: 15px
+			line-height: 17px
+			color: #4a5864
+			margin-bottom: 35px
+			display: block
+			padding: 0 30px
+		span
+			font-size: 15px
+			color: #1e699e
+			line-height: 17px
+			padding: 0 30px
+			display: block
+			margin-bottom: 17px
+			strong
+				color: #152b3d
+		a
+			font-size: 16px
+			line-height: 16px
+			color: #e53832
+			padding: 0 30px
+			display: block
+			padding-top: 20px
+			margin-top: 13px
+			border-top: 1px dashed #a1b4c3
+		.close-message-popup
+			position: absolute
+			right: 15px
+			top: 15px
+			cursor: pointer

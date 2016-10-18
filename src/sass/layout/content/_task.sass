@@ -1,0 +1,201 @@
+.task
+	font-family: 'Arimo'
+	padding-bottom: 70px
+	h3
+		color: #2082bd
+		font-size: 36px
+		line-height: 38px
+		display: block
+		text-align: center
+		margin-bottom: 60px
+		margin-top: 80px
+	.task-item-container
+		margin-left: -20px
+		font-size: 0
+		line-height: 0	
+		text-align: center	
+		+pie-clearfix
+	.task-item
+		float: left
+		margin-left: 20px
+		width: 380px
+		vertical-align: top
+		h4
+			padding-top: 40px
+			font-size: 24px
+			line-height: 26px
+			color: #f8b947
+			font-weight: bold
+			padding-bottom: 30px
+		.task-item-text
+			padding: 0 35px
+			box-sizing: border-box
+			font-size: 15px
+			line-height: 22px
+			color: #333739
+		.tast-item-img
+			display: block
+			img 
+				display: block
+		&:first-child
+			.tast-item-img
+				img 
+					transform: translate(-17px, 0px)
+
+
+.mission
+	padding-top: 50px
+	padding-bottom: 100px
+	font-family: 'Arimo'
+	.mission-text
+		color: #1a2334
+		font-size: 15px
+		line-height: 22px
+	h3
+		padding-top: 70px
+		padding-bottom: 40px
+		color: #2082bd
+		font-size: 36px
+		display: block
+		text-align: center
+	.mission-container
+		+pie-clearfix
+	.mission-container-item
+		background: #fbfcfd
+		padding: 20px 55px
+		box-sizing: border-box
+		width: 580px
+		margin-bottom: 20px
+		min-height: 180px
+		h5
+			font-size: 18px
+			color: #353946
+			line-height: 22px
+			font-weight: bold
+			padding-bottom: 30px
+		.mission-container-item-text
+			font-size: 16px
+			line-height: 22px
+			color: #1a2334
+		&:nth-child(even)
+			float: right
+		&:nth-child(odd)
+			float: left
+	.mission-see
+		+pie-clearfix
+	.mission-see-l
+		float: left
+		width: 610px
+		background: #2082bd
+		padding: 40px 55px
+		box-sizing: border-box
+		font-size: 15px
+		color: #ffffff
+		line-height: 22px
+		height: 300px
+		h4
+			color: #ffffff
+			font-size: 18px
+			line-height: 26px
+			font-weight: bold
+			padding-bottom: 35px
+		p
+			padding-bottom: 30px
+	.mission-see-r
+		float: right
+		width: 570px
+		height: 300px
+		position: relative
+		&:before
+			position: absolute
+			content: ""
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			background: rgba(#2082bd, 0.25)
+		img 
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover  
+
+
+.china
+	padding: 55px 0
+	text-align: center
+	strong
+		font-size: 16px
+		font-weight: bold
+		display: block
+	.ukraine-china-text
+		max-width: 600px
+		
+		padding-top: 30px
+		display: block
+		margin: auto		
+.ukraine-china
+	font-family: 'Arimo'
+	padding: 55px 0
+	+pie-clearfix
+	color: #353946
+	text-align: center
+	&>.wrapper
+		overflow: hidden
+	h3
+		font-size: 22px
+		line-height: 24px
+		font-weight: bold
+		color: #2082bd
+	p 
+		padding-top: 30px
+		font-size: 15px
+		line-height: 22px
+		padding-right: 25px
+		box-sizing: border-box
+		display: block
+		b 
+			font-weight: bold
+	.ukraine-china-r-text
+		// position: relative
+		margin-top: 30px
+		padding: 30px 25px 30px 30px
+		background: #f9f5e5
+		margin-left: -30px
+		// &:before
+		// 	content: ""
+		// 	display: block
+		// 	width: 835px
+		// 	position: absolute
+		// 	left: -30px
+		// 	top: 0
+		// 	bottom: 0
+		// 	right: 0
+	.ukraine-china-l
+		float: left
+	.ukraine-china-r
+		float: right
+
+	&:nth-child(even)
+		background: #f8fbfd
+		.ukraine-china-l
+			width: 380px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+		.ukraine-china-r
+			text-align: left
+			width: 800px
+	&:nth-child(odd)
+		.ukraine-china-l
+			width: 800px
+			text-align: left
+		.ukraine-china-r
+			width: 380px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex

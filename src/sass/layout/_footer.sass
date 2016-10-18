@@ -1,0 +1,99 @@
+#footer
+	font-family: 'Arimo'
+.footer-top
+	+pie-clearfix
+	background: #22272f
+	.footer-top-item
+		padding: 50px 0 20px
+		float: left
+		width: 300px
+		padding-right: 20px
+		+box-sizing(border-box)
+		position: relative
+		z-index: 2
+		min-height: 325px
+		p 
+			font-size: 15px
+			line-height: 16px
+			margin-bottom: 25px
+			color: #ffffff
+			position: relative
+			display: block
+			z-index: 2
+			&:before
+				font-size: 16px
+				color: #ffffff
+				margin-right: 20px
+				display: inline-block
+				vertical-align: bottom
+		&:first-child
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				top: 0
+				bottom: 0px
+				right: 0
+				left: -25px
+				background: #1c2028
+				z-index: 0
+				width: 280px
+		.phone
+			&:before
+				+font-icon("phone-receiver")
+		.mail
+			&:before
+				+font-icon("mail-black-envelope-symbol")
+		.adress
+			&:before
+				+font-icon("pin")
+		&:nth-child(2)
+			width: 270px
+		&:nth-child(3)
+			width: 230px
+		&:nth-child(4)
+			width: 380px
+			padding-right: 10px
+		h4
+			color: #f1f5fb
+			font-size: 22px
+			line-height: 24px
+			padding-bottom: 20px
+			margin-bottom: 25px
+			position: relative
+			font-weight: bold
+			&:after
+				content: ""
+				width: 40px
+				position: absolute
+				bottom: 0
+				left: 0
+				height: 1px
+				background: #f1f5fb
+		a
+			font-size: 16px
+			line-height: 20px
+			color: #b5bfd0
+			margin-bottom: 15px
+			display: block
+			&:hover
+				color: #8c99af
+.footer-bottom
+	+pie-clearfix
+	background: #1c2028
+	padding: 30px 0 26px
+	p 
+		font-size: 15px
+		color: #fff
+		line-height: 15px
+		float: left 
+		width: 50%
+	a 
+		float: right
+		width: 32.1%
+		font-size: 15px
+		color: #fff
+		line-height: 15px
+		// text-align: right
+		&:hover
+			color: #b5bfd0

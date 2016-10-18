@@ -1,0 +1,318 @@
+.vacancies
+	+pie-clearfix
+	padding-top: 60px
+	font-family: 'Arimo'
+	padding-bottom: 80px
+	position: relative
+	&>.wrapper
+		+pie-clearfix
+.vacancies-l
+	float: left
+	width: 880px
+	.vacancies-l-item
+		padding: 20px
+		box-sizing: border-box
+		background: #fbfdfe
+		display: block
+		+pie-clearfix
+		position: relative
+		&:hover
+			background: #f6fafc
+			.vacancies-l-text-l-img
+				+opacity(1)
+	.vacancies-l-text-l
+		float: left
+		width: 75%
+		h4
+			color: #1c5284
+			font-size: 18px
+			line-height: 20px
+			margin: 3px 0
+			span 
+				display: block
+				font-size: 14px
+				color: #83939d
+				margin-top: 5px
+				line-height: 16px
+	.vacancies-l-text-l-img
+		float: left
+		+opacity(0.7)
+		+transition(0.25s)
+		margin-left: 10px
+		margin-right: 28px
+	.vacancies-l-text-r
+		position: absolute
+		right: 20px
+		top: 0
+		bottom: 0
+		&:before
+			content: ""
+			display: inline-block
+			vertical-align: middle
+			height: 100%
+			width: 0
+		span 
+			font-size: 14px
+			line-height: 16px
+			color: #83939d
+			display: block
+		p 
+			font-size: 14px
+			line-height: 16px
+			color: #dd2922
+			display: block
+			margin-top: 5px
+	.vacancies-l-text-r-container
+		display: inline-block
+		vertical-align: middle
+
+
+.vacancies-r
+	float: right
+	width: 280px
+	.vacancies-r-img
+		display: block
+		width: 100%
+		text-align: center
+		background: #fcfcfd
+		img 
+			display: block
+			padding: 20px
+	.vacancies-r-text
+		display: block
+		width: 100%
+		text-align: center
+		background: #1d76ae
+		font-size: 15px
+		line-height: 21px
+		color: #ffffff
+		padding: 25px 15px 15px
+		box-sizing: border-box
+		a 
+			font-size: 15px
+			line-height: 21px
+			color: #ffffff
+			text-decoration: underline
+.vacancies-r-f-fixed
+	.vacancies-r-f
+		position: fixed
+		top: 80px
+		width: 280px
+.bottabs
+	position: absolute
+	bottom: 60px 
+	float: right 
+	right: 20px 
+
+
+
+
+.vacancy
+	.vacancies-l
+		h4
+			color: #1c5284
+			font-size: 24px
+			line-height: 26px
+			display: block
+			margin-left: 40px
+		h5
+			display: block
+			font-size: 14px
+			color: #83939d
+			margin-top: 5px
+			line-height: 16px
+			padding-bottom: 15px
+			margin-left: 40px
+		span 
+			font-size: 14px
+			line-height: 16px
+			color: #ffffff
+			float: left
+			background: #1d76ae
+			padding: 4px 14px
+			margin-right: 25px
+			border-radius: 3px
+			margin-left: 40px
+		&>p 
+			font-size: 14px
+			line-height: 16px
+			color: #dd2922
+			display: block
+			margin-top: 5px
+	.vacancies-l-text
+		background: #fbfdfe
+		padding: 30px 30px
+		box-sizing: border-box
+		color: #292323
+		font-size: 15px
+		line-height: 22px
+		margin-top: 20px
+		p 
+			padding-bottom: 20px
+		strong
+			font-weight: bold
+			padding-bottom: 20px
+			display: block
+		li 
+			padding-bottom: 20px
+
+.committee
+	font-family: 'Arimo'
+	padding-top: 60px
+	padding-bottom: 75px
+	.committee-text
+		color: #1a2334
+		font-size: 16px
+		line-height: 22px
+		padding-bottom: 50px
+		width: 770px
+		margin: auto
+		text-align: center
+	h3
+		font-size: 30px
+		line-height: 32px
+		color: #1d72aa
+		display: block
+		text-align: center
+		padding-bottom: 50px
+	.committee-item
+		height: 380px
+		margin-bottom: 50px
+		+pie-clearfix
+		&:nth-child(even)
+			.committee-item-l
+				float: right
+			.committee-item-r
+				float: left
+				&:after
+					left: -1410px
+					width: 2000px
+	.committee-item-l
+		float: left
+		width: 590px
+		position: relative
+		height: 380px
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			background: rgba(#145e8c, 0.7)
+	.committee-item-l-img
+		img 
+			position: absolute
+			bottom: 0
+			top: 0
+			right: 0
+			left: 0
+	.committee-item-l-text-top
+		position: absolute
+		left: 45px
+		top: 45px
+		z-index: 2
+		color: #fff
+		text-transform: uppercase
+		p 
+			font-size: 24px
+			display: block
+		strong 
+			font-size: 32px
+			font-weight: bold
+			margin-top: 5px
+			display: block
+	.committee-item-l-text-bottom
+		position: absolute
+		left: 45px
+		bottom: 50px
+		z-index: 2
+		color: #fff
+		strong
+			font-weight: bold
+			font-size: 20px
+			margin-bottom: 5px
+			display: block
+		p
+			font-size: 16px
+			display: block
+	.committee-item-r
+		padding: 45px 45px 25px
+		box-sizing: border-box
+		position: relative
+		float: right
+		height: 380px
+		width: 590px
+		font-size: 15px
+		line-height: 22px
+		color: #1a2334
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			width: 500%
+			background: #f8fbfc
+			z-index: -1
+		p
+			padding-bottom: 30px
+
+
+
+.eror
+	height: 100%
+	display: block
+	width: 100%
+	min-height: 100%
+	background: image-url("eror-bg.jpg") no-repeat center center
+	background-size: cover
+	padding-top: 90px
+	box-sizing: border-box
+	.eror-logo
+		float: left
+		margin-left: 55px
+		margin-bottom: 14%
+		img
+			display: block
+	.eror-container
+		display: block
+		clear: both
+		margin-left: 55px
+	h3 
+		font-size: 48px
+		line-height: 50px
+		color: #c79790
+		margin-top: 30px
+	.eror-text
+		color: #3b4f63
+		font-size: 18px
+		line-height: 22px
+		margin-top: 40px
+		display: block
+		a 
+			color: #1d77af
+			position: relative
+			&:after
+				content: ""
+				background: #1d77af
+				width: 100%
+				height: 1px
+				position: absolute
+				bottom: 0px
+				left: 0
+				right: 0
+				+transition(0.25s)
+			&:hover
+				color: #118edb
+				text-decoration: none
+				&:after
+					width: 0
+
+
+
+
+

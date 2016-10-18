@@ -1,0 +1,209 @@
+.news-content
+	font-family: 'Arimo'
+	font-weight: normal
+	+pie-clearfix
+	background: #fcfdfe
+	margin-bottom: 80px
+.news 
+	margin-left: -10px
+	+pie-clearfix
+.news-item
+	float: left
+	width: 385px
+	margin-left: 10px
+	margin-bottom: 11px
+	height: 310px
+	position: relative
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 1
+		+box-shadow(inset 0px -250px 108px -100px rgba(0,0,0,0.75))
+.news-item-img
+	display: block
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	z-index: 0
+	img 
+		width: 100%
+		height: 100%
+		object-fit: cover
+.news-category
+	left: 20px
+	top: 10px
+	position: absolute
+	display: inline-block
+	background: #db2922
+	color: #fff 
+	font-size: 14px
+	line-height: 16px
+	padding: 7px 14px
+	z-index: 2
+.news-img-category
+	position: absolute
+	right: 20px
+	top: -4px
+	z-index: 2
+.news-item-text
+	position: absolute
+	bottom: 20px
+	left: 0
+	right: 0
+	z-index: 2
+	.date 
+		float: left
+		width: 42px
+		padding: 0 20px	
+	.day
+		font-size: 18px
+		color: #fcfdfe
+		line-height: 20px
+		background: #db2922
+		text-transform: uppercase
+		display: block
+		text-align: center
+		font-weight: bold
+		padding: 5px 0
+	.year
+		font-size: 11px
+		line-height: 13px
+		background: #fcfdfe
+		color: #36445c
+		text-transform: uppercase
+		display: block
+		text-align: center
+		font-weight: bold
+		padding: 6px 0
+	.news-title
+		// float: right
+		// width: 280px
+		padding: 10px 20px 5px
+		h5
+			color: #fff
+			font-size: 16px
+			line-height: 20px
+			font-weight: bold
+			height: 40px
+			overflow: hidden
+
+
+.news-full
+	font-family: 'Arimo'
+	+pie-clearfix
+	margin-bottom: 60px
+	&>.wrapper
+		+pie-clearfix
+	.news-full-l
+		float: left
+		width: 755px
+		margin-top: 49px
+		h3
+			font-size: 24px
+			display: block
+			color: #000000
+			line-height: 30px
+			margin-bottom: 13px
+	.news-full-r
+		position: relative
+		+pie-clearfix
+		float: right
+		width: 410px
+		padding-bottom: 10px
+		margin-top: 29px
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background: #f4f8fb
+			z-index: -1
+			width: 435px
+		h4
+			font-size: 28px
+			line-height: 30px
+			color: #21364b
+			display: block
+			padding: 20px 25px 40px
+		
+		.news-item
+			float: right
+			margin-bottom: 20px	
+			height: 230px
+	.news-city
+		color: #fff 
+		background: #db2922
+		font-size: 14px
+		line-height: 14px
+		padding: 6px 10px 4px
+		float: left
+		margin-right: 20px
+	.news-date
+		color: #3e4957
+		font-size: 14px
+		line-height: 14px
+		padding: 6px 0px 4px
+	.news-full-img
+		display: block
+		width: 100%
+		margin-top: 20px
+		margin-bottom: 40px
+		img 
+			display: block
+			width: 100%
+	.news-full-text
+		font-size: 15px
+		line-height: 22px
+		color: #000000
+		p 
+			display: block
+			margin-bottom: 30px
+
+
+
+.news-shot
+	.news 
+		margin-top: 60px
+	.more-news
+		font-family: 'Arimo'
+		font-size: 18px
+		line-height: 20px
+		color: #fff 
+		background: #d42822
+		padding: 17px 0px 14px
+		width: 310px
+		display: block
+		margin: auto
+		clear: both
+		text-align: center
+		margin-top: 50px
+		border-radius: 3px
+		&:hover
+			background: #e7211a
+
+
+.news-full-r-f
+	+pie-clearfix
+.news-full-r-f-fixed
+	&:before
+		display: none !important
+	.news-full-r-f
+		position: fixed
+		top: 145px
+		width: 410px
+
+.bottabs-news
+	position: absolute !important
+	bottom: 0px !important
+	float: right !important
+	right: 20px !important

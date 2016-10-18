@@ -1,0 +1,156 @@
+.about-us-banner
+	margin-top: -118px
+	z-index: 1
+	display: inline-block
+	position: relative
+	height: 490px
+	width: 100%
+	vertical-align: middle
+	font-family: 'Arimo'
+	&:after
+		content: ""
+		display: block
+		width: 100%
+		background: rgba(#202938, 0.8)
+		height: 100%
+		position: absolute
+		right: 0
+		bottom: 0
+		left: 0
+		top: 0
+		z-index: 2
+	&>.wrapper
+		position: absolute
+		display: inline-block
+		vertical-align: middle
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		text-align: center
+		&:before
+			content: ""
+			display: inline-block
+			vertical-align: middle
+			height: 100%
+			width: 0
+	.about-us-text
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		z-index: 10
+		margin-top: 118px
+		h2
+			font-size: 48px
+			line-height: 50px
+			color: #fff
+			text-transform: uppercase
+			font-weight: bold
+			letter-spacing: 0.4px
+		.about-us-text-container
+			padding-top: 30px
+		a
+			display: inline-block
+			font-size: 15px
+			color: #ffc110
+			padding-bottom: 3px
+			// text-decoration: underline
+			&:after
+				content: ""
+				display: block
+				width: 100%
+				height: 1px
+				background: rgba(#ffc110, 0.6)
+
+			&:hover
+				text-decoration: none
+				color: #fff
+				&:after
+					width: 0
+		span 
+			color: rgba(#fff, 0.3)
+
+
+
+
+.about-us-banner-img
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	img 
+		width: 100%
+		display: block
+		height: 100%
+		object-fit: cover
+
+.about-us-content
+	+pie-clearfix
+	overflow: hidden
+	margin-top: 60px
+	font-family: 'Arimo'
+.about-us-content-l
+	width: 580px
+	float: left
+	height: 430px
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+.about-us-content-r
+	width: 550px
+	float: right
+	color: #1a2334
+	font-size: 15px
+	line-height: 22px
+	h3
+		font-size: 24px
+		line-height: 24px
+		font-weight: bold
+		margin-top: 18px
+		padding-bottom: 43px
+	h4
+		font-size: 17px
+		padding-top: 40px
+		line-height: 22px
+		font-weight: bold
+		padding-bottom: 30px
+	li 
+		font-size: 15px
+		line-height: 17px
+		margin-bottom: 20px
+		padding-left: 20px
+		background: image-url("au-ellips.png") left center no-repeat
+.about-us-content-text
+	color: #1a2334
+	padding-top: 50px
+	font-size: 15px
+	line-height: 22px
+	clear: both
+
+
+
+.about-us-map
+	font-family: 'Arimo'
+	padding-top: 80px
+	padding-bottom: 65px
+	h3
+		padding-bottom: 30px
+		display: block
+		font-weight: bold
+		font-size: 30px
+		line-height: 32px
+		color: #db2922
+		text-align: center
+	h5
+		font-size: 18px
+		color: #292e39
+		text-align: center
+		display: block
+		padding-bottom: 40px
+	.about-us-map-text
+		color: #1a2334
+		font-size: 15px
+		line-height: 22px
+		padding-top: 50px
